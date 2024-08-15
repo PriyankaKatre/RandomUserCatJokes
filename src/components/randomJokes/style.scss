@@ -1,0 +1,109 @@
+
+.tweet-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 524px;
+
+  .views {
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .timestamp{
+    margin-top: 20px;
+    color: gray;
+    font-size: 0.9em;
+  }
+  .verified {
+    margin-left: 5px;
+    path {
+        color: #009dff;
+    }
+  }
+
+  footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+
+        .copyright {
+            font-size: .6rem;
+            color: rgba(255, 255, 255, 0.4)
+        }
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+    }
+    .profile-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-top: 20px
+    }
+
+    .tweet-author {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        font-weight: bold;
+    }
+
+    .handle {
+        color: gray;
+    }
+
+    .tweet-content {
+        margin: 20px 0;
+    }
+
+    .tweet-footer {
+        color: gray;
+        font-size: 0.9em;
+        padding: 15px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray
+    }
+
+    .tweet-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    .gray-icon path {
+        fill: gray;
+    }
+    span {
+        font-size: .8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        svg {
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+    }
+
+    }
+    .top-icons {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        .post {
+            margin-left: 15px
+        }
+    }
+}
+
