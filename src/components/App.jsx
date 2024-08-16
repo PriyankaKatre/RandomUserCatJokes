@@ -1,4 +1,3 @@
-import React from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -7,11 +6,10 @@ import {
 import RandomJokes from "./randomJokes/index.jsx";
 import Profile from "./randomUser/index.jsx";
 import CatListing from "./catListing/index.jsx";
-// import NotFound from "./wildCard/notFound.jsx";
-// import InfiniteScroll from "./horizontalScroll/infiniteScroll.jsx";
-// import "@fontsource/dm-sans";
-// import "@fontsource/dm-sans/400.css";
-// import "@fontsource/dm-sans/400-italic.css";
+import NotFound from "./wildCard/notFound.jsx";
+import "@fontsource/dm-sans";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/400-italic.css";
 
 const App = () => {
   const appRouter = createBrowserRouter([
@@ -31,14 +29,10 @@ const App = () => {
       path: "/cats-listing",
       element: <CatListing />,
     },
-    // {
-    //   path: "/scroll",
-    //   element: <InfiniteScroll />,
-    // },
-    // {
-    //   path: "*",
-    //   element: <NotFound />,
-    // },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
   ]);
   return <RouterProvider router={appRouter} />;
 };
